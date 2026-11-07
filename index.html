@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#000000">
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div id="views">
+    <section id="v-home" class="view"></section>
+    <section id="v-search" class="view" hidden></section>
+    <section id="v-roulette" class="view" hidden></section>
+    <section id="v-albums" class="view" hidden></section>
+  </div>
+  <nav id="nav"></nav>
+</div>
+
+<div id="pages"></div>
+
+<div id="viewer" hidden>
+  <div class="vtop"><button class="ib" data-v="close" aria-label="Close"></button><span id="vcount"></span></div>
+  <div id="vstage"></div>
+  <div class="vbottom">
+    <div id="vtext" dir="auto"></div>
+    <div class="vactions">
+      <button class="ib" data-v="prev" aria-label="Previous"></button>
+      <button class="ib" data-v="like" aria-label="Like"></button>
+      <button class="ib" data-v="album" aria-label="Add to album"></button>
+      <button class="ib" data-v="next" aria-label="Next"></button>
+    </div>
+  </div>
+</div>
+
+<div id="sheets"></div>
+<div id="toast"></div>
+
+<script src="demo.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
